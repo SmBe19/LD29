@@ -79,7 +79,7 @@ public class FinalScreen implements Screen {
 			x = time / 10 + 200;
 			y = -((x - 380) * (x - 380) / 100) + 200 + GameConsts.ScreenHeight
 					* 0.5f;
-			shapeRenderer.rect(x, y, 32, 32, 16, 16, -time / 10 - 1);
+			shapeRenderer.rect(x, y, 16, 16, 32, 32, 1, 1, -time / 10 - 1);
 		}
 		if (activeStatus == animationStatus.EndBlending) {
 			shapeRenderer.setColor(1, 1, 1, 1);
@@ -88,7 +88,7 @@ public class FinalScreen implements Screen {
 			x = time / 10 + 200;
 			y = -((x - 380) * (x - 380) / 100) + 200 + GameConsts.ScreenHeight
 					* 0.5f;
-			shapeRenderer.rect(x, y, 32, 32, 16, 16, -time / 10 - 1);
+			shapeRenderer.rect(x, y, 16, 16, 32, 32, 1, 1, -time / 10 - 1);
 		}
 
 		shapeRenderer.setColor(GameConsts.WallColor);
